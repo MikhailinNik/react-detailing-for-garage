@@ -1,0 +1,37 @@
+.btn {
+	width: 180px;
+	height: 75px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	span {
+		font-size: 30px;
+	}
+	span:hover {
+		cursor: pointer;
+	}
+}
+
+.btn:hover {
+	cursor: pointer;
+	background: #db3138;
+}
+
+.active {
+	width: 180px;
+	height: 75px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	span {
+		font-size: 30px;
+	}
+	span:hover {
+		cursor: pointer;
+	}
+	background: #db3138;
+}

@@ -1,0 +1,325 @@
+@import 'vars';
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+*::-webkit-input-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+*:-moz-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+*::-moz-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+body {
+	input:focus:required:invalid textarea:focus:required:invalid {
+		color: #000;
+	}
+}
+body {
+	input:required:valid textarea:required:valid {
+		color: #000;
+	}
+}
+body {
+	textarea:required:valid {
+		color: #000;
+	}
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	opacity: 1;
+}
+
+img {
+	max-width: 100%;
+}
+
+select,
+input {
+	border: none;
+	background-image: none;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+ul,
+li {
+	list-style: none;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	width: 1920px;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+
+	background-color: #1e1e1e;
+}
+
+.works {
+	display: flex;
+	flex-direction: column;
+
+	&_header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h1 {
+			font-size: 52px;
+		}
+
+		color: #fff;
+	}
+
+	&_content {
+		display: flex;
+		flex-wrap: wrap;
+
+		margin-top: 40px;
+	}
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-top: 120px;
+
+	color: #fff;
+
+	&_header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		margin-bottom: 40px;
+
+		h1 {
+			font-size: 52px;
+		}
+	}
+
+	&_form {
+		width: 600px;
+	}
+
+	&_inputs {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+
+		input {
+			width: 50%;
+			height: 47px;
+			border: 1px solid #3f3f3f;
+
+			padding-left: 20px;
+			font-family: $default-font;
+			font-size: 15px;
+			letter-spacing: 0.05em;
+
+			color: #fff;
+		}
+
+		input:last-child {
+			margin-left: 20px;
+		}
+	}
+
+	&_textarea {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+
+		margin-top: 24px;
+
+		textarea {
+			width: 85%;
+			height: 150px;
+
+			padding: 20px;
+			font-family: $default-font;
+			font-size: 15px;
+			letter-spacing: 0.05em;
+
+			color: #fff;
+
+			background-color: #1e1e1e;
+
+			border: 1px solid #3f3f3f;
+
+			margin-right: 70px;
+		}
+
+		&--icons {
+			display: flex;
+			flex-direction: column;
+
+			div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 40px;
+				height: 40px;
+				border: 1px solid #3f3f3f;
+
+				margin-bottom: 15px;
+
+				cursor: pointer;
+
+				a {
+					width: 20px;
+					height: 20px;
+				}
+			}
+
+			div:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	&_submit {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		margin-top: 40px;
+
+		a {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			text-decoration: none;
+			color: #fff;
+
+			img {
+				margin-right: 10px;
+			}
+		}
+
+		button {
+			background: none;
+			color: inherit;
+			border: none;
+			padding: 0;
+			font: inherit;
+			cursor: pointer;
+			outline: inherit;
+		}
+
+		.button {
+			width: 170px;
+			height: 61px;
+			position: relative;
+
+			text-align: start;
+
+			label {
+				height: 61px;
+			}
+
+			span {
+				position: absolute;
+				left: 50px;
+				top: 10px;
+
+				font-size: 26px;
+				color: #fff;
+			}
+
+			span:hover {
+				transform: scale(0.8);
+				transition: ease-in-out 0.3s;
+				cursor: pointer;
+			}
+		}
+
+		.icons {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			&_otherIcon {
+				display: flex;
+				flex-direction: row;
+
+				padding-left: 20px;
+			}
+		}
+	}
+
+	&_end {
+		width: 100%;
+		height: 89px;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		margin-top: 100px;
+		border-top: 1px solid #3f3f3f;
+
+		h3 {
+			opacity: 0.5;
+
+			margin-right: 100px;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			gap: 20px;
+		}
+	}
+}
