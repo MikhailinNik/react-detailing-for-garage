@@ -11,7 +11,7 @@ import telIcon from '../../assets/footer/telIcon.png';
 
 const Footer = () => {
 	return (
-		<div className="footer">
+		<div className="footer" id="contacts">
 			<div className="footer_header">
 				<h1>Ответим на любой вопрос</h1>
 				<ListIcon />
@@ -22,7 +22,7 @@ const Footer = () => {
 					<input type="text" placeholder="Телефон" />
 				</div>
 				<div className="footer_textarea">
-					<textarea type="text" placeholder="Вопрос по дизайну, тюнингу и др." maxlength="350" />
+					<textarea type="text" placeholder="Вопрос по дизайну, тюнингу и др." maxLength="350" />
 					<div className="footer_textarea--icons">
 						<div>
 							<a href="https://www.instagram.com/garage_detailing11/?igshid=19td5msfp0ql5">

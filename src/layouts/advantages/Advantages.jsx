@@ -12,7 +12,7 @@ import rightIcon from '../../assets/advantages/right.png';
 
 const Advantages = () => {
 	return (
-		<div className={styles.root}>
+		<div className={styles.root} id="advantages">
 			<div className={styles.leftContent}>
 				<div className={styles.content}>
 					<img src={firstIcon} />

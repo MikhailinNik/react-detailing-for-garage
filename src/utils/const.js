@@ -1,35 +1,46 @@
-import one from '../assets/services/1/1.jpg';
-import two from '../assets/services/2/1.jpg';
-import three from '../assets/services/3/1.jpg';
-import four from '../assets/services/4/1.jpg';
-import five from '../assets/services/5/1.jpg';
-import six from '../assets/services/6/1.jpg';
-import seven from '../assets/services/7/1.jpg';
-import eight from '../assets/services/8/1.jpg';
-import nine from '../assets/services/9/1.jpg';
-import eleven from '../assets/services/10/1.jpg';
-import twelve from '../assets/services/11/1.jpg';
-import thirteen from '../assets/services/12/1.jpg';
-import fourteen from '../assets/services/13/1.jpg';
-import fifteen from '../assets/services/14/1.jpg';
-import sixteen from '../assets/services/15/1.jpg';
-import seventeen from '../assets/services/16/1.jpg';
+import a from '../assets/services/1/1.jpg';
+import b from '../assets/services/2/1.jpg';
+import c from '../assets/services/3/1.jpg';
+import d from '../assets/services/4/1.jpg';
+import e from '../assets/services/5/1.jpg';
+import f from '../assets/services/6/1.jpg';
+import g from '../assets/services/7/1.jpg';
+import h from '../assets/services/8/1.jpg';
+import i from '../assets/services/9/1.jpg';
+import j from '../assets/services/10/1.jpg';
+import k from '../assets/services/11/1.jpg';
+import l from '../assets/services/12/1.jpg';
+import m from '../assets/services/13/1.jpg';
+import n from '../assets/services/14/1.jpg';
+import o from '../assets/services/15/1.jpg';
+import p from '../assets/services/16/1.jpg';
 
-export const CARDS_IMAGE = {
-	1: one,
-	2: two,
-	3: three,
-	4: four,
-	5: five,
-	6: six,
-	7: seven,
-	8: eight,
-	9: nine,
-	11: eleven,
-	12: twelve,
-	13: thirteen,
-	14: fourteen,
-	15: fifteen,
-	16: sixteen,
-	17: seventeen,
+export const IMAGE_WASH = {
+	1: l,
+	2: o,
+	3: p,
+};
+
+export const IMAGE_DETAILING = {
+	1: d,
+	2: e,
+	3: i,
+};
+
+export const IMAGE_POLISHING = {
+	1: f,
+	2: g,
+	3: h,
+};
+
+export const IMAGE_PROTECTION = {
+	1: a,
+	2: b,
+	3: m,
+	4: n,
+};
+
+export const IMAGE_DRY_CLEAN = {
+	1: j,
+	2: k,
 };

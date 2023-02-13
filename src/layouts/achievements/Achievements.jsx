@@ -5,7 +5,7 @@ import About from '../../components/about/About';
 
 const Achievements = () => {
 	return (
-		<div className={styles.root}>
+		<div className={styles.root} id="achievements">
 			<About />
 		</div>
 	);

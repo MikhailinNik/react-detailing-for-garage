@@ -7,7 +7,7 @@ const Card = ({ value }) => {
 	return (
 		<div className={styles.card}>
 			<img src={value} />
-			<div className={styles.btn}>
+			<div className={styles.btn} onClick={() => console.log('click')}>
 				<label>
 					<span>Подробнее</span>
 				</label>

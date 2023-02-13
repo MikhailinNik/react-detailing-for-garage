@@ -4,7 +4,7 @@ import { WORKS_PHOTOS } from '../../utils/worksPhoto';
 
 const Works = () => {
 	return (
-		<div className="works">
+		<div className="works" id="work">
 			<div className="works_header">
 				<h1>Наши Работы</h1>
 				<ListIcon />

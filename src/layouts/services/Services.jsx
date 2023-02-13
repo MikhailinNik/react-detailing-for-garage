@@ -3,28 +3,68 @@ import styles from './Services.module.scss';
 import ListIcon from '../../components/listIcon/listIcon';
 import Card from '../../components/card/Card';
 
-import { CARDS_IMAGE } from '../../utils/const.js';
 import Categories from '../../components/categories/Categories';
+import Wash from '../../components/tabs/Wash';
+import Detailing from '../../components/tabs/Detailing';
+import Polishing from '../../components/tabs/Polishing';
+import Protection from '../../components/tabs/Protection';
+import DryCleaner from '../../components/tabs/DryCleaner';
 
-const titles = ['Мойка', 'Детейлинг', 'Полировка', 'Защита', 'Химчистка'];
+const titles = [
+	{
+		title: {
+			text: 'Мойка',
+			category: 0,
+			component: <Wash key={0} />,
+		},
+	},
+	{
+		title: {
+			text: 'Детейлинг',
+			category: 1,
+			component: <Detailing key={1} />,
+		},
+	},
+	{
+		title: {
+			text: 'Полировка',
+			category: 2,
+			component: <Polishing key={2} />,
+		},
+	},
+	{
+		title: {
+			text: 'Защита',
+			category: 3,
+			component: <Protection key={3} />,
+		},
+	},
+	{
+		title: {
+			text: 'Химчистка',
+			category: 4,
+			component: <DryCleaner key={4} />,
+		},
+	},
+];
 
 const Services = () => {
-	// useEffect(() => {}, []);
 	const [categoryId, setCategoryId] = useState(0);
+	console.log('categoryId: ', categoryId);
 
 	return (
-		<div className={styles.root}>
+		<div className={styles.root} id="service">
 			<div className={styles.header}>
 				<h1>НАШИ УСЛУГИ</h1>
 				<ListIcon />
 
 				<div className={styles.categories}>
-					{titles.map((title, index) => (
+					{titles.map((obj, index) => (
 						<Categories
 							key={index}
 							categoryId={categoryId}
 							setCategoryId={setCategoryId}
-							title={title}
+							title={obj.title.text}
 							id={index}
 						/>
 					))}
@@ -32,9 +72,9 @@ const Services = () => {
 			</div>
 
 			<div className={styles.details}>
-				{Object.values(CARDS_IMAGE).map((value, index) => (
-					<Card key={index} value={value} />
-				))}
+				{titles.map((obj, index) =>
+					categoryId === obj.title.category ? obj.title.component : null,
+				)}
 			</div>
 		</div>
 	);

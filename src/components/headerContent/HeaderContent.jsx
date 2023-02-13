@@ -3,6 +3,7 @@ import styles from './HeaderContent.module.scss';
 
 import buttonIcon from '../../assets/first-screen/button.png';
 import ListIcon from '../listIcon/listIcon';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const HeaderContent = () => {
 	return (
@@ -11,13 +12,14 @@ const HeaderContent = () => {
 			<ListIcon />
 
 			<p>Quality never goes out of style — Качество никогда не выходит из моды</p>
-
-			<div className={styles.btn}>
-				<label>
-					<img src={buttonIcon} width={110} height={61} />
-					<span>Наши услуги</span>
-				</label>
-			</div>
+			<AnchorLink href="#service">
+				<div className={styles.btn}>
+					<label>
+						<img src={buttonIcon} width={110} height={61} />
+						<span>Наши услуги</span>
+					</label>
+				</div>
+			</AnchorLink>
 
 			<div className={styles.footer}>
 				<div className={styles.block}>
