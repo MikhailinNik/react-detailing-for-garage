@@ -1,0 +1,65 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.images {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+
+		img {
+			width: 340px;
+			height: 300px;
+			border: 1px solid #3f3f3f;
+		}
+	}
+}
+
+.btn {
+	width: 170px;
+	position: relative;
+
+	margin-top: 40px;
+
+	label {
+		width: 170px;
+
+		height: 61px;
+	}
+
+	span {
+		position: absolute;
+		left: 80px;
+		top: 10px;
+
+		font-size: 26px;
+		color: #fff;
+
+		animation: movebtn 3s ease-in-out infinite;
+		transition: all 0.5s ease-in-out;
+	}
+
+	span:hover {
+		transform: scale(0.8);
+		cursor: pointer;
+	}
+}
+
+.text {
+	width: 50%;
+	font-size: 25px;
+	letter-spacing: 0.04em;
+	text-align: justify;
+
+	margin-top: 30px;
+
+	.price {
+		margin-top: 20px;
+
+		span {
+			color: #db3138;
+			margin-left: 10px;
+		}
+	}
+}

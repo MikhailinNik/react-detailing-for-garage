@@ -1,18 +1,36 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Context } from '../../App';
+
 import styles from './Card.module.scss';
 
-import one from '../../assets/services/1/1.jpg';
+const Card = ({
+	mainImage,
+	detailsImages,
+	description,
+	price,
+	setDetailsImage,
+	setDescription,
+	setPrice,
+}) => {
+	const details = useContext(Context);
 
-const Card = ({ value }) => {
+	const handleClickDetails = () => {
+		details.setIsDetails(true);
+		setDetailsImage(detailsImages);
+		setDescription(description);
+		setPrice(price);
+	};
 	return (
-		<div className={styles.card}>
-			<img src={value} />
-			<div className={styles.btn} onClick={() => console.log('click')}>
-				<label>
-					<span>Подробнее</span>
-				</label>
+		<>
+			<div className={styles.card}>
+				<img src={mainImage} />
+				<div className={styles.btn} onClick={handleClickDetails}>
+					<label>
+						<span>Подробнее</span>
+					</label>
+				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
