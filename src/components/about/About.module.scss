@@ -30,10 +30,12 @@
 	width: 600px;
 
 	p {
+		word-wrap: break-word;
+
+		text-align: justify;
 		font-weight: 400;
 		font-size: 40px;
 		line-height: 100%;
-		letter-spacing: 0.05em;
 	}
 
 	margin-top: 30px;
@@ -73,7 +75,6 @@
 
 	span {
 		font-size: 24px;
-
 		color: #db3138;
 	}
 
@@ -114,7 +115,8 @@
 
 			.about {
 				p {
-					text-align: start;
+					word-wrap: break-word;
+					text-align: center;
 				}
 			}
 		}
@@ -131,14 +133,17 @@
 @media (max-width: 700px) {
 	.about {
 		justify-content: space-between;
-		text-align: justify;
+
 		p {
-			font-size: 17px;
+			word-wrap: break-word;
+			text-align: center;
+			font-size: 23px;
 		}
 	}
 	.rightContent {
 		.box {
 			width: auto;
+
 			p {
 				text-align: center;
 			}
@@ -167,7 +172,6 @@
 
 			span {
 				font-size: 24px;
-
 				color: #db3138;
 			}
 		}

@@ -28,3 +28,20 @@
 		}
 	}
 }
+
+@media (max-width: 415px) {
+	.footer {
+		&_end {
+			height: 100px;
+
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 10px;
+				li {
+				}
+			}
+		}
+	}
+}

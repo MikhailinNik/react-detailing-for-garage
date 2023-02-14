@@ -2,8 +2,6 @@
 @import '../assets/fonts/style';
 // @import '../assets/fonts/style.css';
 
-@import 'adaptive';
-
 * {
 	margin: 0;
 	padding: 0;
@@ -375,3 +373,5 @@ li {
 	color: #db3138;
 	border: 2px solid #db3138;
 }
+
+@import 'adaptive';
