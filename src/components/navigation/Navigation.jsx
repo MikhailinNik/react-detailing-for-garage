@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './Navigation.module.scss';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Link } from 'react-scroll';
 
 import logo from '../../assets/logo.png';
 
@@ -25,29 +25,30 @@ export default function Navigation() {
 					<div></div>
 					<ul className={styles.burgerList}>
 						{headers.map((obj, index) => (
-							<AnchorLink
+							<Link
+								smooth={true}
 								key={index}
-								href={obj.header.href}
+								to={obj.header.href}
 								style={{ color: '#fff', textDecoration: 'none' }}>
 								<li key={index}>{obj.header.text}</li>
-							</AnchorLink>
+							</Link>
 						))}
 					</ul>
 				</div>
 			) : (
-				''
+				<ul className={styles.list}>
+					{headers.map((obj, index) => (
+						<Link
+							smooth={true}
+							key={index}
+							to={obj.header.href}
+							style={{ color: '#fff', textDecoration: 'none' }}>
+							<li key={index}>{obj.header.text}</li>
+						</Link>
+					))}
+				</ul>
 			)}
 
-			<ul className={styles.list}>
-				{headers.map((obj, index) => (
-					<AnchorLink
-						key={index}
-						href={obj.header.href}
-						style={{ color: '#fff', textDecoration: 'none' }}>
-						<li key={index}>{obj.header.text}</li>
-					</AnchorLink>
-				))}
-			</ul>
 			<img src={logo} alt="" width={100} height={100} />
 		</div>
 	);

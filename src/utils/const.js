@@ -235,37 +235,37 @@ export const IMAGES_CATEGORY = [
 export const headers = [
 	{
 		header: {
-			href: '#header',
+			href: 'header',
 			text: 'Главная',
 		},
 	},
 	{
 		header: {
-			href: '#achievements',
+			href: 'achievements',
 			text: 'О нас',
 		},
 	},
 	{
 		header: {
-			href: '#advantages',
+			href: 'advantages',
 			text: 'Advantages',
 		},
 	},
 	{
 		header: {
-			href: '#service',
+			href: 'service',
 			text: 'Услуги',
 		},
 	},
 	{
 		header: {
-			href: '#work',
+			href: 'work',
 			text: 'Работы',
 		},
 	},
 	{
 		header: {
-			href: '#contacts',
+			href: 'contacts',
 			text: 'Контакты',
 		},
 	},

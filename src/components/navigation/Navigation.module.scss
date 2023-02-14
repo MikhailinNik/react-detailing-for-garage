@@ -1,7 +1,7 @@
 .root {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 
 	margin-top: 0px;
@@ -73,6 +73,10 @@
 		animation: none;
 		color: #db3138;
 	}
+}
+
+.menuBtn {
+	display: none;
 }
 
 @media (max-width: 1460px) {

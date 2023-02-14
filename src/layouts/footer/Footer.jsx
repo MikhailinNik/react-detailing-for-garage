@@ -7,7 +7,7 @@ import vkIcon from '../../assets/footer/vkIcon.png';
 import giscon from '../../assets/footer/2gis.png';
 import markIcon from '../../assets/footer/markIcon.png';
 import telIcon from '../../assets/footer/telIcon.png';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { Link } from 'react-scroll';
 
 import { headers } from '../../utils/const';
 
@@ -71,12 +71,13 @@ const Footer = () => {
 			<div className="footer_end">
 				<ul>
 					{headers.map((obj, index) => (
-						<AnchorLink
+						<Link
+							smooth={true}
 							key={index}
-							href={obj.header.href}
+							to={obj.header.href}
 							style={{ color: '#fff', opacity: '0.7', textDecoration: 'none' }}>
 							<li key={index}>{obj.header.text}</li>
-						</AnchorLink>
+						</Link>
 					))}
 				</ul>
 			</div>
