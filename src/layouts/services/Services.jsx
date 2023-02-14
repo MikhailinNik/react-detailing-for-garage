@@ -20,51 +20,42 @@ import {
 } from '../../utils/const';
 
 import { Context } from '../../App';
+import Card from '../../components/card/Card';
 
 const titles = [
 	{
-		title: {
-			text: 'Мойка',
-			category: 0,
-			image: IMAGE_WASH,
-			component: <Wash key={0} id={0} />,
-		},
+		text: 'Мойка',
+		category: 0,
+		image: IMAGE_WASH,
+		component: <Wash key={0} id={0} />,
 	},
 	{
-		title: {
-			text: 'Детейлинг',
-			category: 1,
-			image: IMAGE_DETAILING,
+		text: 'Детейлинг',
+		category: 1,
+		image: IMAGE_DETAILING,
 
-			component: <Detailing key={1} id={1} />,
-		},
+		component: <Detailing key={1} id={1} />,
 	},
 	{
-		title: {
-			text: 'Полировка',
-			category: 2,
-			image: IMAGE_POLISHING,
+		text: 'Полировка',
+		category: 2,
+		image: IMAGE_POLISHING,
 
-			component: <Polishing key={2} id={2} />,
-		},
+		component: <Polishing key={2} id={2} />,
 	},
 	{
-		title: {
-			text: 'Защита',
-			category: 3,
-			image: IMAGE_PROTECTION,
+		text: 'Защита',
+		category: 3,
+		image: IMAGE_PROTECTION,
 
-			component: <Protection key={3} id={3} />,
-		},
+		component: <Protection key={3} id={3} />,
 	},
 	{
-		title: {
-			text: 'Химчистка',
-			category: 4,
-			image: IMAGE_DRY_CLEAN,
+		text: 'Химчистка',
+		category: 4,
+		image: IMAGE_DRY_CLEAN,
 
-			component: <DryCleaner key={4} id={4} />,
-		},
+		component: <DryCleaner key={4} id={4} />,
 	},
 ];
 
@@ -74,6 +65,27 @@ const Services = () => {
 	const [detailsImages, setDetailsImages] = useState([]);
 	const [description, setDescription] = useState('');
 	const [price, setPrice] = useState(0);
+	const [value, setValue] = useState();
+
+	const handleChangeValue = evt => {
+		titles.filter(obj => {
+			if (obj.text === evt.target.value) {
+				setValue(evt.target.value);
+				setCategoryId(obj.category);
+
+				return (
+					<Tab
+						key={obj.category}
+						images={obj.image}
+						id={obj.category}
+						setDetailsImages={setDetailsImages}
+						setDescription={setDescription}
+						setPrice={setPrice}
+					/>
+				);
+			}
+		});
+	};
 
 	return (
 		<div className={styles.root} id="service">
@@ -81,13 +93,21 @@ const Services = () => {
 				<h1>НАШИ УСЛУГИ</h1>
 				<ListIcon />
 
+				<select onChange={handleChangeValue} value={value} className={styles.categoriesSelect}>
+					{titles.map((obj, index) => (
+						<option key={index} value={obj.text}>
+							{obj.text}
+						</option>
+					))}
+				</select>
+
 				<div className={styles.categories}>
 					{titles.map((obj, index) => (
 						<Categories
 							key={index}
 							categoryId={categoryId}
 							setCategoryId={setCategoryId}
-							title={obj.title.text}
+							title={obj.text}
 							id={index}
 						/>
 					))}
@@ -99,11 +119,11 @@ const Services = () => {
 					<Details detailsImages={detailsImages} description={description} price={price} />
 				) : (
 					titles.map((obj, index) =>
-						categoryId === obj.title.category ? (
+						categoryId === obj.category ? (
 							<Tab
 								key={index}
-								images={obj.title.image}
-								id={obj.title.category}
+								images={obj.image}
+								id={obj.category}
 								setDetailsImages={setDetailsImages}
 								setDescription={setDescription}
 								setPrice={setPrice}

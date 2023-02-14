@@ -20,6 +20,7 @@
 .details {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 
 	gap: 20px;
 	margin-top: 50px;
@@ -31,4 +32,60 @@
 
 	margin-top: 30px;
 	margin-bottom: 30px;
+}
+
+.categoriesSelect {
+	display: none;
+}
+
+@media (max-width: 1585px) {
+	.root {
+		margin: 180px 100px;
+	}
+}
+
+@media (max-width: 900px) {
+	.categoriesSelect {
+		display: block;
+		background-color: #db3138;
+		width: 180px;
+		height: 75px;
+		color: #fff;
+		font-size: 25px;
+		font-family: 'Bebas Neue';
+		text-align: center;
+		font-size: 30px;
+
+		margin-top: 30px;
+
+		option {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			width: 50%;
+			height: 200px;
+			color: #fff;
+		}
+
+		option:hover,
+		option:focus,
+		option:active,
+		option:checked {
+			background-color: #000;
+		}
+	}
+
+	.categories {
+		display: none;
+	}
+}
+
+@media (max-width: 430px) {
+	.root {
+		h1 {
+			text-align: center;
+		}
+	}
 }

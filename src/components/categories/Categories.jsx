@@ -2,12 +2,8 @@ import React, { useState } from 'react';
 import styles from './Categories.module.scss';
 
 const Categories = ({ title, id, categoryId, setCategoryId }) => {
-	const [isActiveClass, setIsActiveClass] = useState(false);
-
 	const handleClickToActiveClass = id => {
-		// debugger;
 		setCategoryId(id);
-		// setIsActiveClass(!isActiveClass);
 	};
 
 	return (

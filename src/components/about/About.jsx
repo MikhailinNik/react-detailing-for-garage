@@ -8,7 +8,7 @@ const About = () => {
 		<div className={styles.header}>
 			<div className={styles.leftContent}>
 				<h1>Профессиональный детейлинг центр</h1>
-				<ListIcon />
+				<ListIcon className={styles.list} />
 				<div className={styles.about}>
 					<p>
 						Наш центр одним из первых в Сыктывкаре начал предлагать услугу детейлинга. Самое близкое

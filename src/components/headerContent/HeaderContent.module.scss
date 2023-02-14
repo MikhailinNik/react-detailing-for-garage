@@ -93,3 +93,71 @@
 		color: #db3138;
 	}
 }
+
+@media (max-width: 850px) {
+	.root {
+		margin-top: 200px;
+
+		h1 {
+			font-size: 100px;
+		}
+
+		.block {
+			span {
+				width: fit-content;
+				font-size: 15px;
+			}
+		}
+	}
+}
+@media (max-width: 555px) {
+	.root {
+		margin-top: 220px;
+
+		h1 {
+			font-size: 60px;
+		}
+
+		p {
+			width: 70%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.block {
+			span {
+				width: fit-content;
+				font-size: 15px;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.root {
+		margin-top: 240px;
+	}
+}
+
+@media (max-width: 386px) {
+	.root {
+		margin-top: 210px;
+
+		h1 {
+			font-size: 60px;
+		}
+
+		p {
+			width: 70%;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.block {
+			span {
+				width: fit-content;
+				font-size: 15px;
+			}
+		}
+	}
+}

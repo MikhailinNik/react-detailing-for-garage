@@ -15,19 +15,23 @@ const Advantages = () => {
 		<div className={styles.root} id="advantages">
 			<div className={styles.leftContent}>
 				<div className={styles.content}>
-					<img src={firstIcon} />
-					<h2>материалы от лучших компаний</h2>
+					<div>
+						<img src={firstIcon} />
+						<h2>материалы от лучших компаний</h2>
+					</div>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum est, molestie
-						proin tristique duis sed. Morbi suspendisse amet nisl vestibulum risus. Quis pretium
+						Средства для очистки и ухода, используемые при подготовке и мытье автомобилей от
+						компании <span>Koch-Chemie</span>.
 					</p>
 				</div>
 				<div>
 					<ListIcon />
 				</div>
 				<div className={styles.content}>
-					<img src={secondIcon} />
-					<h2>Опытные мастера</h2>
+					<div>
+						<img src={secondIcon} />
+						<h2>Опытные мастера</h2>
+					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum est, molestie
 						proin tristique duis sed. Morbi suspendisse amet nisl vestibulum risus. Quis pretium
@@ -38,8 +42,10 @@ const Advantages = () => {
 				</div>
 
 				<div className={styles.content}>
-					<img src={thirdIcon} />
-					<h2>Гарантия на все виды работы</h2>
+					<div>
+						<img src={thirdIcon} />
+						<h2>Гарантия на все виды работы</h2>
+					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum est, molestie
 						proin tristique duis sed. Morbi suspendisse amet nisl vestibulum risus. Quis pretium
@@ -47,7 +53,7 @@ const Advantages = () => {
 				</div>
 			</div>
 			<div className={styles.rightContent}>
-				<img src={car2Image} />
+				<img className={styles.mainImage} src={car2Image} />
 				<div className={styles.slider}>
 					<img src={leftIcon} />
 					<span>

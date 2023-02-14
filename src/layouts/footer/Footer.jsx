@@ -6,8 +6,10 @@ import instagramIcon from '../../assets/footer/instagramIcon.png';
 import vkIcon from '../../assets/footer/vkIcon.png';
 import giscon from '../../assets/footer/2gis.png';
 import markIcon from '../../assets/footer/markIcon.png';
-// import mailIcon from '../../assets/footer/mailIcon.png';
 import telIcon from '../../assets/footer/telIcon.png';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
+import { headers } from '../../utils/const';
 
 const Footer = () => {
 	return (
@@ -52,28 +54,30 @@ const Footer = () => {
 						<div>
 							<a href="https://2gis.ru/syktyvkar/firm/70000001037420561">
 								<img src={markIcon} alt="Mark" />
-								<p>ул. Гаражная, 3/2, Сыктывкар, Респ. Коми, Россия, 167000</p>
+								<a href="https://www.google.com/maps/place/Garage+Detailing/@61.6571298,50.8139092,18z/data=!3m1!4b1!4m6!3m5!1s0x43f7d4c7e0a40001:0x4dea2206f8303d06!8m2!3d61.6571285!4d50.8150062!16s%2Fg%2F11j1hz22ss?hl=RU">
+									ул. Гаражная, 3/2, Сыктывкар, Респ. Коми, Россия, 167000
+								</a>
 							</a>
 						</div>
 						<div className="icons_otherIcon">
 							<a href="">
 								<img src={telIcon} alt="Telephone" />
-								<p>+7 (912) 866-57-77</p>
+								<a href="tel:+7 (912) 866-57-77">+7 (912) 866-57-77</a>
 							</a>
 						</div>
 					</div>
 				</div>
 			</form>
 			<div className="footer_end">
-				<h3>
-					2022 © Est et viverra pellentesque pharetra lorem proin in. Vitae magna at tempus commodo.
-				</h3>
-
 				<ul>
-					<li>Главная</li>
-					<li>Оклейка автомобилей</li>
-					<li>Детейлинг автомобилей</li>
-					<li>Галерея работ</li>
+					{headers.map((obj, index) => (
+						<AnchorLink
+							key={index}
+							href={obj.header.href}
+							style={{ color: '#fff', opacity: '0.7', textDecoration: 'none' }}>
+							<li key={index}>{obj.header.text}</li>
+						</AnchorLink>
+					))}
 				</ul>
 			</div>
 		</div>

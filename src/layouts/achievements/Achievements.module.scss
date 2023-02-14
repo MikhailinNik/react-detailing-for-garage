@@ -1,5 +1,18 @@
 .root {
-	margin: 312px 180px 180px 180px;
+	display: flex;
+	justify-content: center;
+	margin: 312px 0px 180px 0px;
 
 	color: #fff;
+}
+
+@media (max-width: 1550px) {
+	.root {
+		display: flex;
+		justify-content: center;
+		margin-top: 312px;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-bottom: 180px;
+	}
 }

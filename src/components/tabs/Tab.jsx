@@ -8,11 +8,11 @@ const Tab = ({ images, setDetailsImages, setDescription, setPrice }) => {
 			{images.map((obj, index) => (
 				<Card
 					key={index}
-					mainImage={obj.card.main}
+					mainImage={obj.main}
 					setDetailsImage={setDetailsImages}
-					detailsImages={obj.card.details}
-					description={obj.card.description}
-					price={obj.card.price}
+					detailsImages={obj.details}
+					description={obj.description}
+					price={obj.price}
 					setDescription={setDescription}
 					setPrice={setPrice}
 				/>
