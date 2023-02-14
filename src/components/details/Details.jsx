@@ -6,7 +6,6 @@ import buttonIcon from '../../assets/first-screen/button.png';
 import ListIcon from '../listIcon/listIcon';
 
 const Details = ({ detailsImages, description, price }) => {
-	console.log('price: ', price);
 	const details = useContext(Context);
 
 	const handleClickBack = () => {

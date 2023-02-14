@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Card from '../card/Card';
+import Card from './card/Card';
 
-const Tab = ({ images, setDetailsImages, setDescription, setPrice }) => {
+const Cards = ({ images, setDetailsImages, setDescription, setPrice }) => {
 	return (
 		<>
 			{images.map((obj, index) => (
@@ -21,4 +21,4 @@ const Tab = ({ images, setDetailsImages, setDescription, setPrice }) => {
 	);
 };
 
-export default Tab;
+export default Cards;

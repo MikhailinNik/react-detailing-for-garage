@@ -1,14 +1,14 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import styles from './Services.module.scss';
 
-import ListIcon from '../../components/listIcon/listIcon';
+import ListIcon from '../../components/listIcon/ListIcon';
 import Categories from '../../components/categories/Categories';
 import Wash from '../../components/tabs/Wash';
 import Detailing from '../../components/tabs/Detailing';
 import Polishing from '../../components/tabs/Polishing';
 import Protection from '../../components/tabs/Protection';
 import DryCleaner from '../../components/tabs/DryCleaner';
-import Tab from '../../components/tabs/Tab';
+import Cards from '../../components/Cards';
 import Details from '../../components/details/Details';
 
 import {
@@ -20,7 +20,6 @@ import {
 } from '../../utils/const';
 
 import { Context } from '../../App';
-import Card from '../../components/card/Card';
 
 const titles = [
 	{
@@ -74,7 +73,7 @@ const Services = () => {
 				setCategoryId(obj.category);
 
 				return (
-					<Tab
+					<Cards
 						key={obj.category}
 						images={obj.image}
 						id={obj.category}
@@ -120,7 +119,7 @@ const Services = () => {
 				) : (
 					titles.map((obj, index) =>
 						categoryId === obj.category ? (
-							<Tab
+							<Cards
 								key={index}
 								images={obj.image}
 								id={obj.category}
