@@ -1,15 +1,15 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import styles from './HeaderContent.module.scss';
 
 import buttonIcon from '../../assets/first-screen/button.png';
-import ListIcon from '../ListIcon/ListIcon';
-import { Link } from 'react-scroll';
+import VectorImage from '../vectorImage/VectorImage';
 
 const HeaderContent = () => {
 	return (
 		<div className={styles.root}>
 			<h1>GARAGE DETAILING</h1>
-			<ListIcon />
+			<VectorImage />
 
 			<p>Quality never goes out of style — Качество никогда не выходит из моды</p>
 			<Link to="service" smooth={true}>

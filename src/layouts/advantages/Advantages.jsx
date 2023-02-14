@@ -4,10 +4,11 @@ import styles from './Advantages.module.scss';
 import firstIcon from '../../assets/advantages/icon1.png';
 import secondIcon from '../../assets/advantages/icon2.png';
 import thirdIcon from '../../assets/advantages/icon3.png';
-import ListIcon from '../../components/ListIcon/listIcon';
+// import ListIcon from '../../components/ListIcon/listIcon';
 import car2Image from '../../assets/advantages/car2.png';
 import leftIcon from '../../assets/advantages/left.png';
 import rightIcon from '../../assets/advantages/right.png';
+import VectorImage from '../../components/vectorImage/VectorImage';
 
 const Advantages = () => {
 	return (
@@ -24,7 +25,7 @@ const Advantages = () => {
 					</p>
 				</div>
 				<div>
-					<ListIcon />
+					<VectorImage />
 				</div>
 				<div className={styles.content}>
 					<div>
@@ -37,7 +38,7 @@ const Advantages = () => {
 					</p>
 				</div>
 				<div>
-					<ListIcon />
+					<VectorImage />
 				</div>
 
 				<div className={styles.content}>

@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './About.module.scss';
 
-import ListIcon from '../ListIcon/listIcon';
+import VectorImage from '../vectorImage/VectorImage';
 
 const About = () => {
 	return (
 		<div className={styles.header}>
 			<div className={styles.leftContent}>
 				<h1>Профессиональный детейлинг центр</h1>
-				<ListIcon className={styles.list} />
+				<VectorImage className={styles.list} />
 				<div className={styles.about}>
 					<p>
 						Наш центр одним из первых в Сыктывкаре начал предлагать услугу детейлинга. Самое близкое

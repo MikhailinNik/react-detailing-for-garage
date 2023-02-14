@@ -1,5 +1,5 @@
 import React from 'react';
-import ListIcon from '../../components/ListIcon/listIcon';
+import VectorImage from '../../components/vectorImage/VectorImage';
 import { WORKS_PHOTOS } from '../../utils/worksPhoto';
 
 const Works = () => {
@@ -7,7 +7,7 @@ const Works = () => {
 		<div className="works" id="work">
 			<div className="works_header">
 				<h1>Наши Работы</h1>
-				<ListIcon />
+				<VectorImage />
 			</div>
 
 			<div className="works_content">

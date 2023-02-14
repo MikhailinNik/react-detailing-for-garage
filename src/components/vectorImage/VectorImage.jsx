@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './ListIcon.module.scss';
+import styles from './VectorImage.module.scss';
 
 import headerIcon from '../../assets/first-screen/headerIcon.png';
 
-const ListIcon = () => {
+const VectorImage = () => {
 	return (
 		<ul className={styles.list}>
 			<li>
@@ -22,4 +22,4 @@ const ListIcon = () => {
 	);
 };
 
-export default ListIcon;
+export default VectorImage;

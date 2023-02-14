@@ -3,7 +3,7 @@ import { Context } from '../../App';
 import styles from './Details.module.scss';
 
 import buttonIcon from '../../assets/first-screen/button.png';
-import ListIcon from '../ListIcon/listIcon';
+import VectorImage from '../vectorImage/VectorImage';
 
 const Details = ({ detailsImages, description, price }) => {
 	const details = useContext(Context);
@@ -18,7 +18,7 @@ const Details = ({ detailsImages, description, price }) => {
 					<img src={image} key={index} />
 				))}
 			</div>
-			<ListIcon />
+			<VectorImage />
 			<div className={styles.text}>
 				<p>{description}</p>
 				<p className={styles.price}>

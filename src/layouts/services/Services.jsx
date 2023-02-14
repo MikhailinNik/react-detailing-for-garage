@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import styles from './Services.module.scss';
 
-import ListIcon from '../../components/ListIcon/listIcon';
+import VectorImage from '../../components/vectorImage/VectorImage';
 import Categories from '../../components/categories/Categories';
 import Cards from '../../components/Cards';
 import Details from '../../components/details/Details';
@@ -21,35 +21,26 @@ const titles = [
 		text: 'Мойка',
 		category: 0,
 		image: IMAGE_WASH,
-		component: <Wash key={0} id={0} />,
 	},
 	{
 		text: 'Детейлинг',
 		category: 1,
 		image: IMAGE_DETAILING,
-
-		component: <Detailing key={1} id={1} />,
 	},
 	{
 		text: 'Полировка',
 		category: 2,
 		image: IMAGE_POLISHING,
-
-		component: <Polishing key={2} id={2} />,
 	},
 	{
 		text: 'Защита',
 		category: 3,
 		image: IMAGE_PROTECTION,
-
-		component: <Protection key={3} id={3} />,
 	},
 	{
 		text: 'Химчистка',
 		category: 4,
 		image: IMAGE_DRY_CLEAN,
-
-		component: <DryCleaner key={4} id={4} />,
 	},
 ];
 
@@ -85,7 +76,7 @@ const Services = () => {
 		<div className={styles.root} id="service">
 			<div className={styles.header}>
 				<h1>НАШИ УСЛУГИ</h1>
-				<ListIcon />
+				<VectorImage />
 
 				<select onChange={handleChangeValue} value={value} className={styles.categoriesSelect}>
 					{titles.map((obj, index) => (

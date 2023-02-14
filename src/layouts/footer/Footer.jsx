@@ -1,5 +1,6 @@
 import React from 'react';
-import ListIcon from '../../components/ListIcon/listIcon';
+import { Link } from 'react-scroll';
+import VectorImage from '../../components/vectorImage/VectorImage';
 
 import buttonIcon from '../../assets/first-screen/button.png';
 import instagramIcon from '../../assets/footer/instagramIcon.png';
@@ -7,7 +8,6 @@ import vkIcon from '../../assets/footer/vkIcon.png';
 import giscon from '../../assets/footer/2gis.png';
 import markIcon from '../../assets/footer/markIcon.png';
 import telIcon from '../../assets/footer/telIcon.png';
-import { Link } from 'react-scroll';
 
 import { headers } from '../../utils/const';
 
@@ -16,7 +16,7 @@ const Footer = () => {
 		<div className="footer" id="contacts">
 			<div className="footer_header">
 				<h1>Ответим на любой вопрос</h1>
-				<ListIcon />
+				<VectorImage />
 			</div>
 			<form className="footer_form">
 				<div className="footer_inputs">
