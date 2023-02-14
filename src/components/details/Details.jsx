@@ -3,7 +3,7 @@ import { Context } from '../../App';
 import styles from './Details.module.scss';
 
 import buttonIcon from '../../assets/first-screen/button.png';
-import ListIcon from '../listIcon/listIcon';
+import ListIcon from '../ListIcon/listIcon';
 
 const Details = ({ detailsImages, description, price }) => {
 	const details = useContext(Context);

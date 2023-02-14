@@ -1,5 +1,5 @@
 import React from 'react';
-import ListIcon from '../../components/listIcon/ListIcon';
+import ListIcon from '../../components/ListIcon/listIcon';
 import { WORKS_PHOTOS } from '../../utils/worksPhoto';
 
 const Works = () => {

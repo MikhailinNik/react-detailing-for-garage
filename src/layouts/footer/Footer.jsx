@@ -1,5 +1,5 @@
 import React from 'react';
-import ListIcon from '../../components/listIcon/ListIcon';
+import ListIcon from '../../components/ListIcon/listIcon';
 
 import buttonIcon from '../../assets/first-screen/button.png';
 import instagramIcon from '../../assets/footer/instagramIcon.png';

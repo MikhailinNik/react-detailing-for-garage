@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './About.module.scss';
 
-import ListIcon from '../listIcon/listIcon';
+import ListIcon from '../ListIcon/listIcon';
 
 const About = () => {
 	return (

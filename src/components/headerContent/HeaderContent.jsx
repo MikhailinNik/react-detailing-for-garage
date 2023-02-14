@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './HeaderContent.module.scss';
 
 import buttonIcon from '../../assets/first-screen/button.png';
-import ListIcon from '../listIcon/ListIcon';
+import ListIcon from '../ListIcon/ListIcon';
 import { Link } from 'react-scroll';
 
 const HeaderContent = () => {

@@ -1,13 +1,8 @@
 import React, { useContext, useState } from 'react';
 import styles from './Services.module.scss';
 
-import ListIcon from '../../components/listIcon/ListIcon';
+import ListIcon from '../../components/ListIcon/listIcon';
 import Categories from '../../components/categories/Categories';
-import Wash from '../../components/tabs/Wash';
-import Detailing from '../../components/tabs/Detailing';
-import Polishing from '../../components/tabs/Polishing';
-import Protection from '../../components/tabs/Protection';
-import DryCleaner from '../../components/tabs/DryCleaner';
 import Cards from '../../components/Cards';
 import Details from '../../components/details/Details';
 
