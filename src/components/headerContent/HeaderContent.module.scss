@@ -17,7 +17,7 @@
 		text-align: center;
 		color: #fff;
 		font-weight: 500;
-		font-size: 27px;
+		font-size: 35px;
 		line-height: 120%;
 
 		margin-top: 40px;
@@ -39,9 +39,10 @@
 	span {
 		position: absolute;
 		left: 50px;
-		top: 10px;
+		top: 0px;
 
-		font-size: 26px;
+		font-size: 35px;
+
 		color: #fff;
 
 		animation: movebtn 3s ease-in-out infinite;
@@ -62,7 +63,9 @@
 	border: 1px solid #3f3f3f;
 	border-right: none;
 	border-left: none;
-	margin-top: 90px;
+	margin-top: 70px;
+
+	font-weight: 500;
 
 	color: #fff;
 }
@@ -78,7 +81,7 @@
 
 	h3 {
 		font-weight: 300;
-		font-size: 20px;
+		font-size: 30px;
 		line-height: 140%;
 		letter-spacing: 0.05em;
 		margin-bottom: 20px;
@@ -87,7 +90,7 @@
 	span {
 		width: 265px;
 		font-weight: 300;
-		font-size: 25px;
+		font-size: 30px;
 		line-height: 140%;
 		text-align: center;
 		color: #db3138;

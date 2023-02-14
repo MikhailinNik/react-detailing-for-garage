@@ -38,16 +38,24 @@
 		align-items: center;
 	}
 
-	h2 {
+	h1 {
 		margin-left: 35px;
-		font-size: 32px;
-		line-height: 140%;
+		font-size: 52px;
+		// line-height: 100%;
+		word-wrap: break-word;
+
+		text-align: justify;
+		letter-spacing: 0.05em;
 	}
 
 	p {
 		margin-top: 30px;
-		font-size: 24px;
+		font-size: 35px;
 		line-height: 120%;
+		word-wrap: break-word;
+
+		text-align: justify;
+		letter-spacing: 0.05em;
 	}
 
 	span {
@@ -141,6 +149,20 @@
 }
 
 @media (max-width: 650px) {
+	.leftContent {
+		.content {
+			div {
+				display: flex;
+				flex-direction: column;
+
+				h1 {
+					margin-left: 0;
+					line-height: 1;
+					text-align: center;
+				}
+			}
+		}
+	}
 	.rightContent {
 		align-items: center;
 

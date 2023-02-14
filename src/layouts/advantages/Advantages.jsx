@@ -17,7 +17,7 @@ const Advantages = () => {
 				<div className={styles.content}>
 					<div>
 						<img src={firstIcon} />
-						<h2>материалы от лучших компаний</h2>
+						<h1>Материалы от лучших компаний</h1>
 					</div>
 					<p>
 						Средства для очистки и ухода, используемые при подготовке и мытье автомобилей от
@@ -30,7 +30,7 @@ const Advantages = () => {
 				<div className={styles.content}>
 					<div>
 						<img src={secondIcon} />
-						<h2>Опытные мастера</h2>
+						<h1>Опытные мастера</h1>
 					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum est, molestie
@@ -44,7 +44,7 @@ const Advantages = () => {
 				<div className={styles.content}>
 					<div>
 						<img src={thirdIcon} />
-						<h2>Гарантия на все виды работы</h2>
+						<h1>Гарантия на все виды работы</h1>
 					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium, rutrum est, molestie

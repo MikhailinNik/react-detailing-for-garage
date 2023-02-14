@@ -20,7 +20,7 @@ const Footer = () => {
 			</div>
 			<form className="footer_form">
 				<div className="footer_inputs">
-					<input type="text" placeholder="ИМЯ" />
+					<input type="text" placeholder="Имя" />
 					<input type="text" placeholder="Телефон" />
 				</div>
 				<div className="footer_textarea">
@@ -54,9 +54,7 @@ const Footer = () => {
 						<div>
 							<a href="https://2gis.ru/syktyvkar/firm/70000001037420561">
 								<img src={markIcon} alt="Mark" />
-								<a href="https://www.google.com/maps/place/Garage+Detailing/@61.6571298,50.8139092,18z/data=!3m1!4b1!4m6!3m5!1s0x43f7d4c7e0a40001:0x4dea2206f8303d06!8m2!3d61.6571285!4d50.8150062!16s%2Fg%2F11j1hz22ss?hl=RU">
-									ул. Гаражная, 3/2, Сыктывкар, Респ. Коми, Россия, 167000
-								</a>
+								ул. Гаражная, 3/2, Сыктывкар, Респ. Коми, Россия, 167000
 							</a>
 						</div>
 						<div className="icons_otherIcon">
