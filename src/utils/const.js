@@ -248,7 +248,7 @@ export const headers = [
 	{
 		header: {
 			href: 'advantages',
-			text: 'Advantages',
+			text: 'Достижения',
 		},
 	},
 	{

@@ -31,6 +31,15 @@
 
 @media (max-width: 415px) {
 	.footer {
+		&_submit {
+			.icons {
+				margin-top: 40px;
+				&_otherIcon {
+					margin-top: 10px;
+					padding: 0;
+				}
+			}
+		}
 		&_end {
 			height: 100px;
 
